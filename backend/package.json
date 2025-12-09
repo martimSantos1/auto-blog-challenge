@@ -4,9 +4,17 @@
   "description": "Backend for the auto blog challenge",
   "license": "ISC",
   "author": "Martim Santos",
-  "type": "commonjs",
+  "type": "module",
   "main": "index.js",
   "scripts": {
+    "start": "node src/index.js",
     "test": "test"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^17.2.3",
+    "express": "^5.2.1",
+    "node-cron": "^4.2.1",
+    "uuid": "^13.0.0"
   }
 }

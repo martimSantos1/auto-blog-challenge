@@ -1,0 +1,83 @@
+###############################################################################
+# Node backend + frontend
+###############################################################################
+backend/node_modules/
+frontend/node_modules/
+
+# Environment variables
+*.env
+*.env.*
+!example.env  # allows you to commit an example template
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Build output
+backend/build/
+backend/dist/
+frontend/dist/
+frontend/build/
+
+###############################################################################
+# Docker
+###############################################################################
+# Persisted container files
+*.pid
+*.seed
+*.db
+
+# Docker local logs
+docker-compose.override.yml
+docker-compose.local.yml
+
+###############################################################################
+# AWS & Infra
+###############################################################################
+# AWS credentials (NEVER commit these)
+.aws/
+*.pem
+*.ppk
+
+# CodeBuild temporary files
+codebuild-output/
+build/
+tmp/
+.cache/
+
+# Terraform (if ever used later)
+*.tfstate
+*.tfstate.backup
+
+###############################################################################
+# OS / Editor files
+###############################################################################
+# macOS
+.DS_Store
+
+# Windows
+Thumbs.db
+
+# VSCode
+.vscode/
+.history/
+
+# JetBrains
+.idea/
+
+###############################################################################
+# Misc
+###############################################################################
+# Coverage
+coverage/
+.nyc_output/
+
+# Local data files used by backend
+backend/data/*.json
+!backend/data/example.json  # allow committing an empty template
+
+# Exception: allow seeds file
+!backend/data/articles.json
