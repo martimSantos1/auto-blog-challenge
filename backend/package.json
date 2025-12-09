@@ -1,0 +1,12 @@
+{
+  "name": "auto-blog-backend",
+  "version": "1.0.0",
+  "description": "Backend for the auto blog challenge",
+  "license": "ISC",
+  "author": "Martim Santos",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  }
+}
